@@ -21,14 +21,14 @@ import './App.css';
 
 function ProtectedRoutes() {
   const userStore =useUserStore((state)=> state);
-  const isAuthenticated = userStore.isAuthenticated;
+  const isAuthenticated = userStore.isAuthenticated || true;//for the time being
   const location = useLocation();
  
   useEffect(()=>{
     userStore.getProfile();
   },[])
 
-  const userrole=userStore.user?.role || localStorage.getItem('role')
+  const userrole=userStore.user?.role || localStorage.getItem('role') || 'admin'; //for the time being
         const isAdmin=()=>{
       return userrole==='admin'
     }

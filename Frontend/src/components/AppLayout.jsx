@@ -21,9 +21,9 @@ if(!shouldHideNav)
     userStore.getProfile();
   },[])
 }
-  const username=userStore.user?.username || localStorage.getItem('username');
-  const userrole=userStore.user?.role || localStorage.getItem('role')
-  const userchar=userStore.user?.username.slice(0,1) || localStorage.getItem('username').slice(0,1)
+  const username=userStore.user?.username || localStorage.getItem('username')||'a';
+  const userrole=userStore.user?.role || localStorage.getItem('role')||'a';
+  const userchar=userStore.user?.username.slice(0,1) || localStorage.getItem('username')?.slice(0,1)
 
 
 if(!shouldHideNav)

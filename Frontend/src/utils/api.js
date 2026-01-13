@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
-const API_BASE_URL = "https://back-end-for-assessment.vercel.app/";//this is changeable
+const API_BASE_URL = "https://test/";//this is changeable
 
 const api=axios.create({
     baseURL:API_BASE_URL,
