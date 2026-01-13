@@ -13,7 +13,7 @@ function Navigation() {
     userStore.getProfile();
   },[])
 
-  const userrole=userStore.user?.role || localStorage.getItem('role')
+  const userrole='admin'//userStore.user?.role || localStorage.getItem('role')
 
       const isAdmin=()=>{
     return userrole==='admin'
