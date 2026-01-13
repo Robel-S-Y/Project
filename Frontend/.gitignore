@@ -1,0 +1,34 @@
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directory
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Local environment files
+*.local
+.env
+.env.*.local
+
+# IDE/editor folders and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional if using coverage or test tools
+coverage/
+*.lcov

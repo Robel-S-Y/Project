@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Database files
+*.sqlite
+*.sqlite3
+db/*.sqlite
+
+# IDE files
+.vscode/
+.idea/
+
+# npm
+package-lock.json
+
+# Mac system files
+.DS_Store
