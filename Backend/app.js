@@ -6,7 +6,7 @@ import redis from './config/redis.js';
 
 const app=express();
 app.use(express.json())
-const port=2121;
+const port=4040;
 
 try{
     await sequelize.authenticate()
